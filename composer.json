@@ -1,0 +1,35 @@
+{
+    "name": "maybeway/simple-command-bus",
+    "type": "library",
+    "description": "PHP CQRS Simple command Bus of Maybeway/ddd-cqrs-es",
+    "keywords": ["cqrs", "command bus", "aggregate"],
+    "homepage": "https://github.com/Maybeway/SimpleCommandBus.git",
+    "license": "MIT",
+    "source": {
+        "url": "https://github.com/Maybeway/SimpleCommandBus.git",
+        "type": "git",
+        "reference": "master"
+    },
+    "require": {
+        "php": "^7.2",
+        "psr/container": "^1.0",
+        "maybeway/ddd-cqrs-es": "^0.1"
+    },
+    "authors": [
+        {
+            "name": "Michal Koričanský",
+            "email": "michal.koricansky@maybeway.com",
+            "homepage": "http://michalkoricansky.com/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Maybeway\\SimpleCommandBus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Maybeway\\SimpleCommandBus\\Test\\": "tests/"
+        }
+    }
+}
