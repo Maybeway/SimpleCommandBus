@@ -40,7 +40,7 @@ class SimpleCommandBus
     {
         $handler = $this->getCommandHandler($command);
 
-        if (!is_callable($handler) && $handler instanceof CommandHandler) {
+        if (!is_callable($handler) || !($handler instanceof CommandHandler)) {
             throw new CommandHandlerIsNotCallable(get_class($handler));
         }
 
